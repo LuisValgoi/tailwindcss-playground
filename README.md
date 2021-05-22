@@ -1,70 +1,131 @@
-# Getting Started with Create React App
+# Objective
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+To get to know more about the [tailwindcss](https://tailwindcss.com/) framework.
 
-## Available Scripts
+# Note
 
-In the project directory, you can run:
+- `lower level` than bootstrap.
 
-### `yarn start`
+- you `won't have` out of the box components.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- you `need to create your own` components.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- tailwind `empowers you by giving several tools` out of the box for you.
 
-### `yarn test`
+- the customization of components `its faster`.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- using the `cdn` for installation, you will lose some features.
 
-### `yarn build`
+# Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+https://tailwindcss.com/docs/guides/create-react-app
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+npx create-react-app my-project
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+npm install -D tailwindcss@npm:@tailwindcss/postcss7-compat postcss@^7 autoprefixer@^9
 
-### `yarn eject`
+npm install @craco/craco
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+// change scripts
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+// add craco config
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+npx tailwindcss init
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+// add purge property
 
-## Learn More
+// add tailwind directives
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# Quick
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- `min-h-screen`: min-height: 100vh.
 
-### Code Splitting
+- `w-full`: width: 100%;
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- `flex`: display: flex.
 
-### Analyzing the Bundle Size
+- `items-center`: align-items: center.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- `grid-cols-1`: grid-template-columns: repeat(1, minmax(0, 1fr)).
 
-### Making a Progressive Web App
+- `text-5xl`: font-size: 3rem; + line-height: 1.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- `rounded-lg`: border-radius: 0.5rem.
 
-### Advanced Configuration
+- `shadow-xl`: --tw-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04); box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- `rounded-full`: border-radius: 9999px.
 
-### Deployment
+- `py-1`: padding-top: 0.25rem; + padding-bottom: 0.25rem.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- `mx-auto`: centralize an element which has a d-block.
 
-### `yarn build` fails to minify
+      - margin-left: auto; + margin-right: auto;
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- `flex-shrink-0`: won't let your image be resized
+
+      - how much the flex item will shrink relative to the rest of the flex items in the flex container when there isn't enough space on the row.
+
+# Directive
+
+- `@apply`: Using the apply you can create the "base"
+      
+      - https://tailwindcss.com/docs/functions-and-directives#apply
+
+
+# Reference
+
+Just in Time Compilation
+https://blog.tailwindcss.com/just-in-time-the-next-generation-of-tailwind-css
+
+Optimizing for Production
+https://tailwindcss.com/docs/optimizing-for-production
+
+Alias Configuration
+https://mtateam.medium.com/how-to-use-import-aliases-with-react-native-and-vs-code-dadb246674c7
+
+Adding Customization to Webpack
+https://stackoverflow.com/questions/65055214/import-aliases-not-working-as-expected-in-creat-react-app-with-craco
+
+# Explanation
+
+```bash
+grid grid-cols-1 lg:grid-cols-2 
+
+      - create a grid.
+
+      - where this grid has only 1 column per line.
+
+      - but, at the large screen, uses 2 columns per line.
+```
+
+```bash
+bg-blue-600 lg:min-h-screen lg:flex lg:items-center p-8 sm:p-12
+
+      - applys a dark blue.
+
+      - from large screens to on, uses the 100vh
+
+      - from large screens to on, change from d-block to d-flex
+
+      - from large screens to on, centralize the elements vertically (cross axis)
+
+      - from normal screens, uses padding:9
+
+      - from small screen to on, uses padding:12
+```
+
+```sh
+lg:min-h-screen lg:flex lg:items-center p-12 lg:p-24 xl:p-48
+      - from large screen to on, applies 100vh
+
+      - from large screens to on, centralize the elements vertically (cross axis)
+
+      - in normal screens, applies padding:12
+
+      - from large screens to on, applies padding:25
+
+      - from extra large screens to on, applies padding:48
+```
