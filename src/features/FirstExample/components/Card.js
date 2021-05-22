@@ -1,7 +1,7 @@
 import React from "react";
 
-import Input from "@components/atoms/Input";
-import { ButtonOutline, ButtonPrimary } from "@components/atoms/Button";
+import Input from "@features/_shared/Input";
+import { ButtonOutline, ButtonPrimary } from "@features/_shared/Button";
 
 export default function Card() {
   return (

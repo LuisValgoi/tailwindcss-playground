@@ -4,6 +4,10 @@ To get to know more about the [tailwindcss](https://tailwindcss.com/) framework.
 
 # Note
 
+- its a `postcss` plugin.
+
+      - CRA [adds vendor prefixes to it automatically through Autoprefixer](https://create-react-app.dev/docs/post-processing-css/) 
+
 - `lower level` than bootstrap.
 
 - you `won't have` out of the box components.

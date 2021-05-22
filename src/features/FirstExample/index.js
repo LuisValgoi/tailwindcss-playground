@@ -1,9 +1,9 @@
 import React from "react";
 
-import Welcome from "@components/Welcome";
-import Card from "@components/Card";
+import Welcome from "@features/FirstExample/components/Welcome";
+import Card from "@features/FirstExample/components/Card";
 
-export default function App() {
+export default function FirstExample() {
   return (
     <div className="min-h-screen bg-indigo-100">
       <div className="grid grid-cols-1 lg:grid-cols-2">
