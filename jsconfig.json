@@ -4,6 +4,9 @@
     "paths": {
       "@features/*": [
         "./src/features/*"
+      ],
+      "@components/*": [
+        "src/components/*"
       ]
     }
   },

@@ -4,7 +4,8 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Home from "@features/Home";
 import FirstExample from "@features/FirstExample";
 import SecondExample from "@features/SecondExample";
-import NavBack from "./_shared/NavBack";
+
+import NavBack from "@components/NavBack";
 
 export default function App() {
   return (
