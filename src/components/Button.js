@@ -2,14 +2,14 @@ import React from "react";
 
 const ButtonBase = (props) => {
   return (
-    <button type="button" class={`${props.class} btn btn-${props.color}`}>
+    <button type="button" onClick={props.onClick} class={`${props.class} btn btn-${props.color}`}>
       {props.text}
     </button>
   );
 };
 
 export const ButtonPrimary = (props) => {
-  return <ButtonBase {...props} color={props.color} class={`${props.class} flex-shrink-0 text-white`} />;
+  return <ButtonBase {...props} onClick={props.onClick} color={props.color} class={`${props.class} flex-shrink-0 text-white`} />;
 };
 
 export const ButtonOutline = (props) => {
@@ -27,5 +27,5 @@ export const ButtonOutline = (props) => {
     default:
       break;
   }
-  return <ButtonBase {...props} color={props.color} class={`${props.class} flex-shrink-0 ${hoverBackgroundColor} border ${borderColor} hover:text-white ${textColor}`} />;
+  return <ButtonBase {...props} color={props.color} onClick={props.onClick} class={`${props.class} flex-shrink-0 ${hoverBackgroundColor} border ${borderColor} hover:text-white ${textColor}`} />;
 };
