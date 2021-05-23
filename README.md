@@ -84,17 +84,15 @@ npx tailwindcss init
 
 # Reference
 
-Just in Time Compilation
-https://blog.tailwindcss.com/just-in-time-the-next-generation-of-tailwind-css
+[Just in Time Compilation](https://blog.tailwindcss.com/just-in-time-the-next-generation-of-tailwind-css)
 
-Optimizing for Production
-https://tailwindcss.com/docs/optimizing-for-production
+[Optimizing for Production](https://tailwindcss.com/docs/optimizing-for-production)
 
-Alias Configuration
-https://mtateam.medium.com/how-to-use-import-aliases-with-react-native-and-vs-code-dadb246674c7
+[Alias Configuration](https://mtateam.medium.com/how-to-use-import-aliases-with-react-native-and-vs-code-dadb246674c7)
 
-Adding Customization to Webpack
-https://stackoverflow.com/questions/65055214/import-aliases-not-working-as-expected-in-creat-react-app-with-craco
+[Adding Customization to Webpack](https://stackoverflow.com/questions/65055214/import-aliases-not-working-as-expected-in-creat-react-app-with-craco)
+
+[Designing TailwindCSS with Adam](https://www.youtube.com/watch?v=21HuwjmuS7A&list=PL7CcGwsqRpSM3w9BT_21tUU8JN2SnyckR&index=2) + [REPO BASE](https://github.com/Miravicson/Workcation)
 
 # Explanation
 

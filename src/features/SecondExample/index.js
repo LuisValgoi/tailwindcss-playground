@@ -16,7 +16,7 @@ export default function SecondExample() {
               Workcation helps you find work-friendly rentals in a beautiful locations so you can enjoy some nice weathere even when you are not on vacation.
             </p>
             <div className="m-auto mt-4">
-              <ButtonPrimary color="indigo" class="uppercase shadow-lg" text="Book your Escape" />
+              <ButtonPrimary color="indigo" class="xl:hover:bg-gray-900 uppercase shadow-lg" text="Book your Escape" />
             </div>
           </div>
         </div>
