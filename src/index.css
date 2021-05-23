@@ -7,10 +7,24 @@
 
 /* Button:Blue */
 .btn-blue {
-  @apply bg-blue-600;
+  @apply bg-blue-500;
 }
 .btn-blue:hover {
+  @apply bg-blue-600;
+}
+.btn-blue:focus {
   @apply bg-blue-700;
+}
+
+/* Button:Indigo */
+.btn-indigo {
+  @apply bg-indigo-500;
+}
+.btn-indigo:hover {
+  @apply bg-indigo-600;
+}
+.btn-indigo:focus {
+  @apply bg-indigo-700;
 }
 
 /* Input */
