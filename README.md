@@ -2,6 +2,14 @@
 
 To get to know more about the [tailwindcss](https://tailwindcss.com/) framework.
 
+# Link
+
+https://tailwindcss-playground-cra.vercel.app/
+
+or
+
+https://tailwindcss-playground-cra.netlify.app/
+
 # Status
 [![Netlify Status](https://api.netlify.com/api/v1/badges/f4d7978e-1e32-4b67-8bcf-cde627fe015b/deploy-status)](https://app.netlify.com/sites/tailwindcss-playground-cra/deploys)
 
